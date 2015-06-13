@@ -1,4 +1,4 @@
-# modèle Diplômes Cnam et validation
+# modeleDiplomesCnam
 Modèlisation d'un diplôme du cnam avec validation pour un auditeurs
 
 Un diplôme est consituté d'un ensembles d'UEs à valider.
