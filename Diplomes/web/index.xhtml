@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Hello from Facelets
+        <br />
+        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="List"/></h1>
+                <p:dataTable value="#{Diplomes.all}" var="item">
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Codedip"/>
+                        </f:facet>
+                        <h:outputText value="#{item.codedip}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Diploma"/>
+                        </f:facet>
+                        <h:outputText value="#{item.diploma}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="IdDiplome"/>
+                        </f:facet>
+                        <h:outputText value="#{item.idDiplome}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Typediplome"/>
+                        </f:facet>
+                        <h:outputText value="#{item.typediplome}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Totalcredits"/>
+                        </f:facet>
+                        <h:outputText value="#{item.totalcredits}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Totalexperience"/>
+                        </f:facet>
+                        <h:outputText value="#{item.totalexperience}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Totalens"/>
+                        </f:facet>
+                        <h:outputText value="#{item.totalens}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Totallangue"/>
+                        </f:facet>
+                        <h:outputText value="#{item.totallangue}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Niveau"/>
+                        </f:facet>
+                        <h:outputText value="#{item.niveau}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Cycle"/>
+                        </f:facet>
+                        <h:outputText value="#{item.cycle}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Exp"/>
+                        </f:facet>
+                        <h:outputText value="#{item.exp}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Nouveaud"/>
+                        </f:facet>
+                        <h:outputText value="#{item.nouveaud}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Codecatalogue"/>
+                        </f:facet>
+                        <h:outputText value="#{item.codecatalogue}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="DipNivFR"/>
+                        </f:facet>
+                        <h:outputText value="#{item.dipNivFR}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="DipNivEN"/>
+                        </f:facet>
+                        <h:outputText value="#{item.dipNivEN}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="DipPhraseNivFR"/>
+                        </f:facet>
+                        <h:outputText value="#{item.dipPhraseNivFR}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="DipPhraseNivEN"/>
+                        </f:facet>
+                        <h:outputText value="#{item.dipPhraseNivEN}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Spec"/>
+                        </f:facet>
+                        <h:outputText value="#{item.spec}"/>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+
